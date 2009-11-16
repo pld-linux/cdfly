@@ -9,9 +9,12 @@ Source0:	http://dl.sourceforge.net/cdfly/%{name}-%{version}.zip
 # Source0-md5:	d460a16d8d2563f419c7d81a176acfec
 URL:		http://cdfly.sourceforge.net
 BuildRequires:	QtCore-devel
+BuildRequires:	QtGui-devel
+BuildRequires:	QtSql-devel
 BuildRequires:	qt4-build >= 4.3.3-3
 BuildRequires:	qt4-qmake >= 4.3.3-3
 BuildRequires:	rpmbuild(macros) >= 1.129
+BuildRequires:	unzip
 Requires:	QtSql-sqlite3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
